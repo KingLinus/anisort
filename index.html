@@ -12,6 +12,12 @@
   <link rel="stylesheet" type="text/css" href="src/css/reset.css">
   <link rel="stylesheet" type="text/css" href="src/css/styles.css">
 
+  <h1>
+    Select files with HTML and JavaScript
+  </h1>
+  <input type="file" id="file-selector" multiple/>
+  <ul id="output"></ul>
+
   <script src="src/js/data.js"></script>
   <script src="src/js/data/2017-05-01.js"></script>
   <script src="src/js/data/2018-02-20.js"></script>
@@ -22,10 +28,32 @@
   <script src="src/js/data/2019-11-26.js"></script>
   <script src="src/js/data/2021-03-29.js"></script>
   <script src="src/js/data/2021-05-09.js"></script>
+  <script src="src/js/data/2022-12-11.js"></script>
 
   <script src="src/js/html2canvas.min.js"></script>
   <script src="src/js/lz-string.min.js"></script>
   <script src="src/js/seedrandom.min.js"></script>
+
+  <script>
+  const output = document.getElementById('output');
+    if (window.FileList && window.File) {
+    document.getElementById('file-selector').addEventListener('change', event => {
+        output.innerHTML = '';
+        for (const file of event.target.files) {
+        const li = document.createElement('li');
+        const name = file.name ? file.name : 'NOT SUPPORTED';
+        const type = file.type ? file.type : 'NOT SUPPORTED';
+        const size = file.size ? file.size : 'NOT SUPPORTED';
+        li.textContent = `name: ${name}, type: ${type}, size: ${size}`;
+        output.appendChild(li);
+
+        
+        }
+    })
+};
+</script>
+
+
   <script src="src/js/main.js"></script>
 </head>
 
