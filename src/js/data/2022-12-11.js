@@ -5,7 +5,7 @@ dataSet[dataSetVersion].options = [
   {
     name: "Filter by Series Status",
     key: "series",
-    tooltip: "Check this to restrict to certain status.",
+    tooltip: "Check this to restrict to certain statuses.",
     checked: false,
     sub: [
         { name: "Watching", tooltip: "Currently Watching Anime", key: "CURRENT" },
@@ -16,11 +16,17 @@ dataSet[dataSetVersion].options = [
     ]
   },
   {
-    name: "Filter by Stage Enemy Appearances",
-    key: "stage",
-    tooltip: "Check this to restrict to characters that appear in certain stages as enemies.",
+    name: "Filter by format",
+    key: "format",
+    tooltip: "Check this to restrict certain formats.",
     checked: false,
-    sub: [ { name: "Stage 1", key: "st1" }, { name: "Stage 2", key: "st2" }, { name: "Stage 3", key: "st3" }, { name: "Stage 4", key: "st4" }, { name: "Stage 5/Penultimate", tooltip: "Stage 4 in 5-stage games, and Stage 8 in 9-stage games.", key: "st5" }, { name: "Stage 6/Final", key: "st6" }, { name: "Stage EX/Phantasm", key: "ex" }
+    sub: [ 
+      { name: "TV", key: "TV" }, 
+      { name: "ONA", key: "ONA" }, 
+      { name: "Movie", key: "MOVIE" }, 
+      { name: "Special", key: "SPECIAL" }, 
+      { name: "TV Short", key: "TV SHORT" }, 
+      { name: "OVA", key: "OVA" }, 
     ]
   },
   {
@@ -49,7 +55,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -58,7 +64,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -67,7 +73,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -76,7 +82,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -85,7 +91,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -94,7 +100,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -103,7 +109,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -112,7 +118,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["ONA"]
   }
   },
   
@@ -121,7 +127,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -130,7 +136,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -139,7 +145,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -148,7 +154,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV_SHORT"]
   }
   },
   
@@ -157,7 +163,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV_SHORT"]
   }
   },
   
@@ -166,7 +172,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -175,7 +181,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -184,7 +190,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PAUSED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -193,7 +199,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -202,7 +208,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -211,7 +217,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -220,7 +226,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -229,7 +235,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -238,7 +244,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -247,7 +253,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -256,7 +262,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -265,7 +271,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -274,7 +280,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["OVA"]
   }
   },
   
@@ -283,7 +289,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -292,7 +298,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -301,7 +307,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV_SHORT"]
   }
   },
   
@@ -310,7 +316,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV_SHORT"]
   }
   },
   
@@ -319,7 +325,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -328,7 +334,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -337,7 +343,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["ONA"]
   }
   },
   
@@ -346,7 +352,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["SPECIAL"]
   }
   },
   
@@ -355,7 +361,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -364,7 +370,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -373,7 +379,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -382,7 +388,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -391,7 +397,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -400,7 +406,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -409,7 +415,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -418,7 +424,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -427,7 +433,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -436,7 +442,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -445,7 +451,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -454,7 +460,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -463,7 +469,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["OVA"]
   }
   },
   
@@ -472,7 +478,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -481,7 +487,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -490,7 +496,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -499,7 +505,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -508,7 +514,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -517,7 +523,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -526,7 +532,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -535,7 +541,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -544,7 +550,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -553,7 +559,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -562,7 +568,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -571,7 +577,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -580,7 +586,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -589,7 +595,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -598,7 +604,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -607,7 +613,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -616,7 +622,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -625,7 +631,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -634,7 +640,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -643,7 +649,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -652,7 +658,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -661,7 +667,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -670,7 +676,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["OVA"]
   }
   },
   
@@ -679,7 +685,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -688,7 +694,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -697,7 +703,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -706,7 +712,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -715,7 +721,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -724,7 +730,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -733,7 +739,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -742,7 +748,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -751,7 +757,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -760,7 +766,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -769,7 +775,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -778,7 +784,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -787,7 +793,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -796,7 +802,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -805,7 +811,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -814,7 +820,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -823,7 +829,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -832,7 +838,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -841,7 +847,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -850,7 +856,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -859,7 +865,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["SPECIAL"]
   }
   },
   
@@ -868,7 +874,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -877,7 +883,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -886,7 +892,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -895,7 +901,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -904,7 +910,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -913,7 +919,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -922,7 +928,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -931,7 +937,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -940,7 +946,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -949,7 +955,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -958,7 +964,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -967,7 +973,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -976,7 +982,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -985,7 +991,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV_SHORT"]
   }
   },
   
@@ -994,7 +1000,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["SPECIAL"]
   }
   },
   
@@ -1003,7 +1009,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1012,7 +1018,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1021,7 +1027,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1030,7 +1036,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1039,7 +1045,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1048,7 +1054,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -1057,7 +1063,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV_SHORT"]
   }
   },
   
@@ -1066,7 +1072,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1075,7 +1081,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1084,7 +1090,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1093,7 +1099,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["OVA"]
   }
   },
   
@@ -1102,7 +1108,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1111,7 +1117,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1120,7 +1126,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1129,7 +1135,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["OVA"]
   }
   },
   
@@ -1138,7 +1144,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1147,7 +1153,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["OVA"]
   }
   },
   
@@ -1156,7 +1162,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1165,7 +1171,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1174,7 +1180,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1183,7 +1189,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1192,7 +1198,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1201,7 +1207,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -1210,7 +1216,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1219,7 +1225,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1228,7 +1234,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["ONA"]
   }
   },
   
@@ -1237,7 +1243,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1246,7 +1252,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["ONA"]
   }
   },
   
@@ -1255,7 +1261,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1264,7 +1270,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1273,7 +1279,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["SPECIAL"]
   }
   },
   
@@ -1282,7 +1288,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1291,7 +1297,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["COMPLETED"],
-  stage: []
+  format: ["OVA"]
   }
   },
   
@@ -1300,7 +1306,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1309,7 +1315,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1318,7 +1324,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -1327,7 +1333,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1336,7 +1342,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1345,7 +1351,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -1354,7 +1360,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1363,7 +1369,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1372,7 +1378,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1381,7 +1387,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1390,7 +1396,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -1399,7 +1405,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -1408,7 +1414,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1417,7 +1423,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1426,7 +1432,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -1435,7 +1441,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1444,7 +1450,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1453,7 +1459,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["OVA"]
   }
   },
   
@@ -1462,7 +1468,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1471,7 +1477,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1480,7 +1486,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1489,7 +1495,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1498,7 +1504,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1507,7 +1513,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1516,7 +1522,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1525,7 +1531,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1534,7 +1540,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1543,7 +1549,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1552,7 +1558,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1561,7 +1567,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1570,7 +1576,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1579,7 +1585,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1588,7 +1594,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1597,7 +1603,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1606,7 +1612,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1615,7 +1621,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1624,7 +1630,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1633,7 +1639,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -1642,7 +1648,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1651,7 +1657,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1660,7 +1666,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1669,7 +1675,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1678,7 +1684,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1687,7 +1693,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1696,7 +1702,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1705,7 +1711,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -1714,7 +1720,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1723,7 +1729,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1732,7 +1738,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1741,7 +1747,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["SPECIAL"]
   }
   },
   
@@ -1750,7 +1756,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1759,7 +1765,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1768,7 +1774,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1777,7 +1783,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1786,7 +1792,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1795,7 +1801,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1804,7 +1810,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1813,7 +1819,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1822,7 +1828,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["PLANNING"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1831,7 +1837,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["DROPPED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1840,7 +1846,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["DROPPED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1849,7 +1855,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["DROPPED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1858,7 +1864,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["DROPPED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1867,7 +1873,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["DROPPED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1876,7 +1882,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["DROPPED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1885,7 +1891,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["DROPPED"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1894,7 +1900,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1903,7 +1909,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -1912,7 +1918,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1921,7 +1927,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1930,7 +1936,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1939,7 +1945,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1948,7 +1954,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["MOVIE"]
   }
   },
   
@@ -1957,7 +1963,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1966,7 +1972,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1975,7 +1981,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1984,7 +1990,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -1993,7 +1999,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -2002,7 +2008,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -2011,7 +2017,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -2020,7 +2026,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -2029,7 +2035,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -2038,7 +2044,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -2047,7 +2053,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -2056,7 +2062,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -2065,7 +2071,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -2074,7 +2080,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -2083,7 +2089,7 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["TV"]
   }
   },
   
@@ -2092,9 +2098,10 @@ dataSet[dataSetVersion].characterData = [
   img: "c5DqpgX.png",
   opts: {
   series: ["CURRENT"],
-  stage: []
+  format: ["ONA"]
   }
   },
+  
   
 ];
   
