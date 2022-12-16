@@ -29,22 +29,22 @@ dataSet[dataSetVersion].options = [
       { name: "OVA", key: "OVA" }, 
     ]
   },
-  {
-    name: "Remove PC-98 Duplicates",
-    key: "pc98",
-    tooltip: "Check this to remove PC-98 characters with a Windows counterpart."
-  },
-  {
-    name: "Remove Non-Girls",
-    key: "notgirl",
-    tooltip: "Check this to remove all non-female characters."
-  },
-  {
-    name: "Remove Nameless Characters",
-    key: "nameless",
-    tooltip: "Check this to remove all characters without canonical names.",
-    checked: false
-  }
+  // {
+  //   name: "Remove PC-98 Duplicates",
+  //   key: "pc98",
+  //   tooltip: "Check this to remove PC-98 characters with a Windows counterpart."
+  // },
+  // {
+  //   name: "Remove Non-Girls",
+  //   key: "notgirl",
+  //   tooltip: "Check this to remove all non-female characters."
+  // },
+  // {
+  //   name: "Remove Nameless Characters",
+  //   key: "nameless",
+  //   tooltip: "Check this to remove all characters without canonical names.",
+  //   checked: false
+  // }
 ];
 
 
