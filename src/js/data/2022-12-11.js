@@ -47,6 +47,89 @@ dataSet[dataSetVersion].options = [
   // }
 ];
 
+// Here we define our query as a multi-line string
+// Storing it in a separate .graphql/.gql file is also possible
+var query = `
+query ($userName: String) {
+  MediaListCollection (userName: $userName, type: ANIME) { 
+      lists {
+          status
+          entries
+          {
+              status
+              completedAt { year month day }
+              startedAt { year month day }
+              progress
+              progressVolumes
+              score
+              notes
+              private
+              media
+              {
+                  id
+                  idMal
+                  season
+                  seasonYear
+                  format
+                  source
+                  episodes
+                  chapters
+                  volumes
+                  title
+                  {
+                      english
+                      romaji
+                  }
+                  description
+                  coverImage { medium }
+                  synonyms
+                  isAdult
+              }
+          }
+      }
+  }
+  }
+`;
+
+// Define our query variables and values that will be used in the query request
+var variables = {
+    userName: 'KingLinus'
+
+};
+
+// Define the config we'll need for our Api request
+var url = 'https://graphql.anilist.co',
+    URLoptions = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+            query: query,
+            variables: variables
+        })
+    };
+
+// Make the HTTP Api request
+fetch(url, URLoptions).then(handleResponse)
+                   .then(handleData)
+                   .catch(handleError);
+
+function handleResponse(response) {
+    return response.json().then(function (json) {
+        return response.ok ? json : Promise.reject(json);
+    });
+}
+
+function handleData(data) {
+    console.log(data);
+}
+
+function handleError(error) {
+    alert('Error, check console');
+    console.error(error);
+}
 
 dataSet[dataSetVersion].characterData = [
 
