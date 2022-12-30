@@ -91,9 +91,10 @@ query ($userName: String) {
   }
 `;
 
+var animeListUserName = prompt("What is your AniList username (must be public)?");
 // Define our query variables and values that will be used in the query request
 var variables = {
-    userName: 'KingLinus'
+    userName: animeListUserName
 
 };
 
