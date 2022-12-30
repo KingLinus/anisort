@@ -144,7 +144,7 @@ function handleData(data) {
                 {
                     name: currentAnimeTitle,
                     img: animeData.data.MediaListCollection.lists[i].entries[j].media.coverImage.medium,
-                    opt: {
+                    opts: {
                         series: [animeData.data.MediaListCollection.lists[i].entries[j].status],
                         format: [animeData.data.MediaListCollection.lists[i].entries[j].media.format],
                     }
